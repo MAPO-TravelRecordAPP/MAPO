@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/map/map",
+    "pages/home/home"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "MAPO",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图",
+        "iconPath": "icon/_search.png",
+        "selectedIconPath": "icon/search.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "个人主页",
+        "iconPath": "icon/_my.png",
+        "selectedIconPath": "icon/my.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "cloud": true
+}
