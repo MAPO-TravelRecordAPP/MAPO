@@ -1,16 +1,25 @@
 <!--miniprogram/pages/upload/upload.wxml-->
-<view class="weui-uploader">
-  <view class="img-v weui-uploader__bd">
-    <view class='pic' wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
-        <image class='weui-uploader__img '
-                src="{{item}}"
-                data-index="{{index}}" mode="aspectFill" bindtap="previewImg">
-                  <icon type='cancel' class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></icon>
-        </image>
+
+<view class='pages'>
+  <!-- 图片 -->
+  <view class="images_box">
+    <block wx:key="imgbox" wx:for="{{imgbox}}">
+      <view class='img-box'>
+        <image class='img' src='{{item}}'></image>
+        <view class='img-delect' data-deindex='{{index}}' bindtap='imgDelete1'>
+          <image class='img' src='../../icon/delete_img.png'></image>   
+        </view>
+      </view>
+    </block>
+    <view class='img-box' bindtap='addPic1' wx:if="{{imgbox.length<9}}">
+      <image class='img' src='../../icon/add_image.png'></image>   
     </view>
-     
-      <!-- 用来提示用户上传图片 -->
-      <view class="weui-uploader__input-box pic" bindtap="chooseImg"> </view>
   </view>
-  <button class="upload-img-btn" bindtap="chooseImg" type='primary'>拍照  / 上传</button>
+  <!-- 文字 -->
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <input class="weui-input" auto-focus placeholder="输入文字"/>
+    </view>
+  </view>
+  <button bindtap='fb'>发布</button>
 </view>
