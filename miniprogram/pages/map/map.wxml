@@ -1,2 +1,23 @@
 <!--miniprogram/pages/map/map.wxml-->
-<text>miniprogram/pages/map/map.wxml</text>
+<map 
+  id="map"
+  subkey="4IKBZ-6LHWW-X7MRM-R6OJQ-47WPH-ELFCS"
+  longitude="{{longitude}}"
+  latitude="{{latitude}}" 
+  layer-style="1"
+  style="height:100vh;weight:100%"
+  markers="{{markers}}"
+  bindcontroltap="bindcontroltap"
+  bindmarkertap="bindmarkertap"
+  bindregionchange="bindregionchange" 
+  bindtap="bindtapMap"
+  show-location
+>
+
+</map>
+
+ 
+<view bindtap="adddetial">
+  <image class="circle-float" src="../../icon/_img.png"></image>
+</view>
+ 
