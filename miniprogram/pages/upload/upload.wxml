@@ -5,9 +5,15 @@
   <view class="images_box">
     <block wx:key="imgbox" wx:for="{{imgbox}}">
       <view class='img-box'>
+        <!-- 照片 -->
         <image class='img' src='{{item}}'></image>
+        <!-- 删除 -->
         <view class='img-delect' data-deindex='{{index}}' bindtap='imgDelete1'>
           <image class='img' src='../../icon/delete_img.png'></image>   
+        </view>
+        <!-- 地点 -->
+        <view class = "position">
+          <text>{{position_text}}</text>
         </view>
       </view>
     </block>
@@ -16,10 +22,9 @@
     </view>
   </view>
   <!-- 文字 -->
-  <view class="weui-cells weui-cells_after-title">
-    <view class="weui-cell weui-cell_input">
-      <input class="weui-input" auto-focus placeholder="输入文字"/>
-    </view>
+  <view class = "text_area">
+      <textarea placeholder="请输入文本" />
   </view>
+  <!-- 发布按钮 -->
   <button bindtap='fb'>发布</button>
 </view>

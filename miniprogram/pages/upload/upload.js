@@ -8,7 +8,8 @@ Page({
    */
   data: {
     imgbox: [],//选择图片
-    fileIDs:[]  //上传云存储后的返回值
+    fileIDs:[],  //上传云存储后的返回值
+    position_text: '上海市华东师范大学'  //地点文本
   },
 
   /**
