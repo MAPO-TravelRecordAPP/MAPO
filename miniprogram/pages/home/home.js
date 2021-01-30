@@ -14,4 +14,9 @@ Page({
       }
     })
   },
+  temp:function() {
+    wx.navigateTo({
+      url: '../mypositionrecord/mypositionrecord'
+     })
+  }
 })
