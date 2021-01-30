@@ -97,7 +97,30 @@
  border-bottom: 1rpx solid #ccc;
 }
 
+.user_content .user_main .post_wrap {
+ background-color: #ffffff;
+ margin-top: 30rpx;
+ border-radius: 30rpx;
+ border: 3rpx solid #E0E3DA;
+ box-shadow:5rpx 5rpx 5rpx 5rpx #E0E3DA;
+}
 
+.user_content .user_main .post_wrap .post_title {
+ padding: 20rpx;
+ font-size:18px;
+ color:#000;
+ border-bottom: solid 1px #ccc;
+}
+
+.user_content .user_main .post_wrap .post_content {
+ display: flex;
+ justify-content:space-around;
+}
+.user_content .user_main .post_wrap .post_content navigator {
+ padding: 15rpx 0;
+ flex: 1;
+ text-align: center;
+}
 
 .modal-mask {
  width: 100%;

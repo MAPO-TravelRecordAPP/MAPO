@@ -12,7 +12,7 @@
   <view class="user_main">
     <!--地点信息-->
     <view class="order_wrap">
-      <view class="order_title">打卡地点</view>
+      <view class="order_title">旅行档案</view>
       <view class="order_content">
         <navigator url="/pages/order/released">
           <view class="order_name">想去的</view>
@@ -28,6 +28,19 @@
       <view class="info_content">
         <view class="info_name">性别:{{name}}</view>
         <view class="info_name">年龄:{{sex}}</view>
+      </view>
+    </view>
+
+    <!--社区功能-->
+    <view class="post_wrap">
+      <view class="post_title">社区</view>
+      <view class="post_content">
+        <navigator url="/pages/post/released">
+          <view class="post_name">我的发布</view>
+        </navigator>
+        <navigator url="/pages/post/collect">
+          <view class="post_name">我的收藏</view>
+        </navigator>
       </view>
     </view>
   </view>
